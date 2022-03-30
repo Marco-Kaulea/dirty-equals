@@ -780,8 +780,10 @@
 
 <a href="#dirty_equals.HasName" class="headerlink" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">HasName</span><span class="p">(</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">expected_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">allow_instances</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">expected_name</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">IsStr</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">allow_instances</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span>
 </code></pre></div>
 
     <div class="doc doc-contents first">
@@ -807,7 +809,7 @@
         <tr>
           <td><code>expected_name</code></td>
           <td>
-                <code>str</code>
+                <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="dirty_equals._strings.IsStr" href="../string/#dirty_equals.IsStr">IsStr</a>, str]</code>
           </td>
           <td><p>The name to check against.</p></td>
           <td>
@@ -879,7 +881,7 @@
 
 
 <a href="#dirty_equals.HasRepr" class="headerlink" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">HasRepr</span><span class="p">(</span><span class="n">expected_repr</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">HasRepr</span><span class="p">(</span><span class="n">expected_repr</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">IsStr</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span>
 </code></pre></div>
 
     <div class="doc doc-contents first">
@@ -905,7 +907,7 @@
         <tr>
           <td><code>expected_repr</code></td>
           <td>
-                <code>str</code>
+                <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="dirty_equals._strings.IsStr" href="../string/#dirty_equals.IsStr">IsStr</a>, str]</code>
           </td>
           <td><p>The expected repr value.</p></td>
           <td>
