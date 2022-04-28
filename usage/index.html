@@ -656,6 +656,10 @@
 <li>The object on the left has to either have length 3 <strong>or</strong> contain <code>"z"</code></li>
 </ol>
 <h2 id="initialised-vs-class-comparison">Initialised vs. Class comparison<a class="headerlink" href="#initialised-vs-class-comparison" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This does not work with PyPy.</p>
+</div>
 <p><em>dirty-equals</em> allows comparison with types regardless of whether they've been initialised.</p>
 <p>This saves users adding <code>()</code> in lots of places.</p>
 <p>Example:</p>
